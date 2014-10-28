@@ -1,5 +1,6 @@
 {
   "name": "stylesheet",
+  "version": "1.0.0",
   "description": "Thin wrapper for StyleSheet",
   "main": "index.js"
 }
