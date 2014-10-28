@@ -1,6 +1,7 @@
 /**
  * Expose `Sheet`
  */
+
 module.exports = Sheet;
 
 function Sheet() {
@@ -10,6 +11,7 @@ function Sheet() {
   this.el.appendChild(document.createTextNode(''));
   this.append();
 }
+
 /**
  * Add rule
  *
@@ -19,12 +21,11 @@ function Sheet() {
  */
 
 Sheet.prototype.addRule = function(selector, rules, index) {
-
-	if("insertRule" in this.sheet) {
-		this.sheet.insertRule(selector + '{' + rules + '}', index);
-	} else if("addRule" in this.sheet) {
-		this.sheet.addRule(selector, rules, index);
-	}
+  if('insertRule' in this.sheet) {
+    this.sheet.insertRule(selector + '{' + rules + '}', index);
+  } else if('addRule' in this.sheet) {
+    this.sheet.addRule(selector, rules, index);
+  }
 };
 
 /**
@@ -32,6 +33,8 @@ Sheet.prototype.addRule = function(selector, rules, index) {
  *
  * @param {String} selector
  * @param {String} rules
+ *
+ * @return {Number} index
  */
 
 Sheet.prototype.appendRule = function(selector, rules) {
