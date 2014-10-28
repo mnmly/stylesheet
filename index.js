@@ -6,7 +6,7 @@ module.exports = Sheet;
 function Sheet() {
   this.el = document.createElement('style');
   this.el.id = 'style-' + Date.now();
-	// WebKit hack :(
+  // WebKit hack
   this.el.appendChild(document.createTextNode(''));
   this.append();
 }
