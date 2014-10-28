@@ -1,5 +1,5 @@
 {
   "name": "stylesheet",
-  "description": "Simple wrapper for Stylesheet",
+  "description": "Thin wrapper for StyleSheet",
   "main": "index.js"
 }

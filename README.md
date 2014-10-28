@@ -1,6 +1,6 @@
 # Sheet
 
-Thin wrapper for `Stylesheet`
+Thin wrapper for `StyleSheet`
 
   - [Sheet.addRule()](#sheetaddruleselectorstringrulesstringindexnumber)
   - [Sheet.appendRule()](#sheetappendruleselectorstringrulesstring)
