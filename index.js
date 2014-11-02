@@ -38,7 +38,7 @@ Sheet.prototype.addRule = function(selector, rules, index) {
  */
 
 Sheet.prototype.appendRule = function(selector, rules) {
-  var index = this.sheet.rules.length;
+  var index = (this.sheet.rules || this.sheet.cssRules).length;
   this.addRule(selector, rules, index);
   return index;
 };
